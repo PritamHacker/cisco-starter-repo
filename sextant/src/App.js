@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
 
-function App() {
+const Banner = ({ title }) => (
+  <div className="banner">
+    <h1>{title}</h1>
+  </div>
+);
+
+const Card = ({ data }) => (
+  <div className="card">
+    <p>{data}</p>
+  </div>
+);
+
+const App = () => {
+  const bannerTitle = "Sextent";
+  const dataPoints = ["Data Point 1", "Data Point 2", "Data Point 3"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Banner title={bannerTitle} />
+
+      <div className="card-container">
+        {dataPoints.map((data, index) => (
+          <Card key={index} data={data} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
