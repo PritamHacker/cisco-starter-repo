@@ -1,6 +1,7 @@
 // App.js
 import React from 'react';
 import './App.css';
+import PublicIP from './PublicIP';
 
 const Banner = ({ title }) => (
   <div className="banner">
@@ -27,6 +28,7 @@ const App = () => {
           <Card key={index} data={data} />
         ))}
       </div>
+      <PublicIP />
     </div>
   );
 };
