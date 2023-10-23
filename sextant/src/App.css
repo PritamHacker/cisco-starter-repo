@@ -38,3 +38,15 @@
 .public-ip h2 {
   color: #333;
 }
+
+.packet-latency {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.packet-latency h2 {
+  color: #333;
+}

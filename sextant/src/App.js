@@ -1,7 +1,7 @@
-// App.js
 import React from 'react';
 import './App.css';
 import PublicIP from './PublicIP';
+import PacketLatency from './PacketLatency';
 
 const Banner = ({ title }) => (
   <div className="banner">
@@ -29,6 +29,7 @@ const App = () => {
         ))}
       </div>
       <PublicIP />
+      <PacketLatency />
     </div>
   );
 };
