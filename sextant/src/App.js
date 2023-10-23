@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import PublicIP from './PublicIP';
-import PacketLatency from './PacketLatency';
+import PylonConnector from './PylonConnector';
 
 const Banner = ({ title }) => (
   <div className="banner">
@@ -29,7 +29,11 @@ const App = () => {
         ))}
       </div>
       <PublicIP />
-      <PacketLatency />
+      <div className="packet-latency">
+        <h2>Packet latency</h2>
+        <PylonConnector />
+      </div>
+      
     </div>
   );
 };
